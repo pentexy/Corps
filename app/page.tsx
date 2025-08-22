@@ -102,10 +102,10 @@ export default function MinecraftServerLanding() {
                     onClick={copyToClipboard}
                     variant="outline"
                     size="lg"
-                    className="relative bg-background/80 backdrop-blur-sm"
+                    className="relative bg-background/80 backdrop-blur-sm flex items-center gap-2"
                   >
                     {copied ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
-                    Copy
+                    {copied ? "Copied!" : "Copy"}
                   </Button>
                 </div>
               </div>
